@@ -71,8 +71,8 @@ table{width:100%;border-collapse:collapse}td,th{padding:10px 8px;border-bottom:1
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
 <script>
 /* ====== STEP 1: PASTE YOUR TWO SUPABASE VALUES HERE (Project Settings > API) ====== */
-const SUPABASE_URL = "";      // e.g. https://abcd1234.supabase.co
-const SUPABASE_ANON_KEY = ""; // the "anon public" key (NEVER the service_role key)
+const SUPABASE_URL = "https://zmtcyldbyyjxwhzbizkt.supabase.co";      // e.g. https://abcd1234.supabase.co
+const SUPABASE_ANON_KEYconst NOTICE = `\u003Cdiv class=\"notice\">\u003Cb>STORE PICKUP ONLY\u003C/b>\u003Cbr>No online payment • No Cash on Delivery • No home delivery\u003Cbr>\u003Csmall>Online payment and home delivery are not available. Orders are confirmed by the store and customers must collect and pay at the physical store.\u003C/small>\u003C/div>`; = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InptdGN5bGRieXlqeHdoemJpemt0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTEzNjI1MTMsImV4cCI6MjEwNjkzODUxM30.xe8wnPA_-fyF80TlWr2ZTYbwCAVn-2G9KgcpqOq7XKI"; // the "anon public" key (NEVER the service_role key)
 /* ================================================================================== */
 const sb = SUPABASE_URL ? supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
 const S = {cats:[],prods:[],svcs:[],set:{},cart:JSON.parse(localStorage.getItem('cart')||'{}'),q:'',cat:'',sort:'',user:null,tab:'products'};
